@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | F1_YasMarina</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="shortcut icon" href="TemplateData/logo.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
@@ -47,20 +47,20 @@
         if (type == 'error') div.style = 'background: red; padding: 10px;';
         else {
           if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        }
           setTimeout(function() {
             warningBanner.removeChild(div);
             updateBannerVisibility();
           }, 5000);
-        }
         updateBannerVisibility();
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl_fps_accel.loader.js";
+      var loaderUrl = buildUrl + "/build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/0b078d52af2b5c60d5df69c909e2d5e7.data",
-        frameworkUrl: buildUrl + "/98b25a3540fe4cf5f3d92dfe3ab4321c.js",
-        codeUrl: buildUrl + "/cf66334cf5fa9b61a4ea20c4a5c41d40.wasm",
+        dataUrl: buildUrl + "/1fa251c81b78c34304319746cb48bc16.data",
+        frameworkUrl: buildUrl + "/e39125c9b80f918b6cd4e1d7c6ad2e40.js",
+        codeUrl: buildUrl + "/0dd2e38fbbab8520b57ee1e9d7ef2a18.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "F1_YasMarina",
@@ -89,7 +89,7 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner("Buckle up, it's race day!");
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
